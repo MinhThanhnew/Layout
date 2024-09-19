@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.liveness.stylish.ProfileActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_back_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_checkout_checkout"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_back_checkout"
+        android:layout_centerHorizontal="true"
+        android:text="@string/checkout" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_checkout_checkout"
+        android:layout_marginBottom="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_delivery"
+                style="@style/TextStyle"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp"
+                android:text="@string/delivery_address"
+                android:drawableStart="@drawable/ic_gps_2"
+                android:drawablePadding="3dp"/>
+            <RelativeLayout
+                android:id="@+id/relativeLayout_checkout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_delivery"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bv_xam_white_2"
+                android:paddingStart="10dp"
+                android:layout_toStartOf="@+id/image_add_0">
+                <TextView
+                    android:id="@+id/txt_address_checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStyleEditText"
+                    android:text="Address :"
+                    android:layout_marginTop="12dp" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_pen2"
+                    android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:id="@+id/txt_address_checkout_2"
+                    android:layout_marginTop="12dp"
+                    style="@style/TextStyleForgotPassword"
+                    android:layout_below="@id/txt_address_checkout"
+                    android:text="@string/txt_blow_delivery"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_add_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/relativeLayout_checkout_1"
+                android:layout_alignBottom="@+id/relativeLayout_checkout_1"
+                android:layout_alignParentEnd="true"
+                android:padding="20dp"
+                app:srcCompat="@drawable/ic_add_0"
+                android:background="@drawable/bv_xam_white_2"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_ShoppingList"
+                style="@style/TextStyle"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp"
+                android:text="Shopping List"
+                android:layout_below="@+id/relativeLayout_checkout_1"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_ShoppingList"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:spanCount="1"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_recycler_checkout"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/action_home"
+    android:title="@string/action_home"
+    android:icon="@drawable/home_1"/>
+    <item android:id="@+id/action_wishlist"
+        android:title="@string/action_wish_list"
+        android:icon="@drawable/ic_wishlist"/>
+    <item android:id="@+id/shopping"
+        android:icon="@drawable/ic_shopping"
+        android:title=""/>
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search"/>
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_setting"
+        android:icon="@drawable/ic_settings"/>
+
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    android:background="@color/white">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt1"
+        style="@style/TextStyle"
+        android:text="2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="17dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt3"
+        style="@style/TextStyle"
+        android:text="/3"
+        android:textColor="@color/quickly"
+        android:layout_toEndOf="@+id/txt1"
+        android:layout_marginTop="1dp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSkip2"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        style="@style/TextStyle"
+        android:text="Skip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/container2"
+        android:layout_below="@+id/txtSkip2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/image_2" />
+
+            <TextView
+                android:id="@+id/txtMakePayment"
+                style="@style/TextStyle1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/make_payment"
+                android:layout_marginTop="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtBottomChoosePr"
+                style="@style/TextStyle2"
+                android:text="@string/txt_bottom_choose"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/container2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/white"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_circle_2"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnNext2"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="17dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/prev1"
+        style="@style/TextStyle"
+        android:text="@string/prev"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="17dp"
+        android:textColor="@color/xam6"
+        />
+</RelativeLayout>

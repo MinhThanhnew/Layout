@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/shadow_r4">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_r5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/image_r5" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Black Winter..."
+        android:layout_marginTop="10dp"
+        style="@style/TextStyleEditText"
+        android:layout_below="@+id/image_r5"
+        android:textSize="16dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r5_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neque porro quisquam est qui dolorem ipsum quia"
+        android:layout_marginTop="10dp"
+        style="@style/TextStyleItem"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txt_r5"
+        android:layout_alignEnd="@id/image_r5"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r5_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="₹1500"
+        style="@style/TextStyleEditText"
+        android:layout_below="@+id/txt_r5_2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerV5_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="1"
+        tools:itemCount="5"
+        tools:listitem="@layout/start"
+        android:layout_below="@+id/txt_r5_3"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r5_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="56890"
+        style="@style/TextStyleEditText"
+        android:textColor="#A4A9B3"
+        android:layout_toEndOf="@+id/recyclerV5_1"
+        android:layout_alignBottom="@id/recyclerV5_1"
+        android:layout_marginStart="10dp"/>
+
+
+
+
+
+</RelativeLayout>

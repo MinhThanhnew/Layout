@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    android:paddingStart="17dp"
+    android:paddingEnd="17dp"
+    tools:context="com.liveness.stylish.ProfileActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_back_place_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txt_shopping_bag"
+        android:layout_alignBottom="@id/txt_shopping_bag"
+        app:srcCompat="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_shopping_bag"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:text="@string/shopping_bag" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txt_shopping_bag"
+        android:layout_alignBottom="@id/txt_shopping_bag"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_favorite" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_back_place_order">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="37dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_place_oder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_checkout_re" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_womenCasual_2"
+                style="@style/TextStyle"
+                android:layout_alignTop="@+id/image_place_oder"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/image_place_oder"
+                android:text="Women’s Casual Wear"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_note_placeOrder"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/txt_womenCasual_2"
+                android:layout_alignStart="@+id/txt_womenCasual_2"
+                android:layout_alignEnd="@id/txt_womenCasual_2"
+                android:layout_marginTop="10dp"
+                android:text="Checked Single-Breasted Blazer"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/btn_size"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/txt_note_placeOrder"
+                android:layout_alignStart="@+id/txt_womenCasual_2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bv_shopping"
+                android:drawableEnd="@drawable/ic_down"
+                android:drawablePadding="6dp"
+                android:padding="8dp"
+                android:text="size 42"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/btn_Qty"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/txt_note_placeOrder"
+                android:layout_alignEnd="@+id/txt_womenCasual_2"
+                android:layout_alignBottom="@id/btn_size"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/btn_size"
+                android:background="@drawable/bv_shopping"
+                android:drawableEnd="@drawable/ic_down"
+                android:drawablePadding="6dp"
+                android:padding="8dp"
+                android:text="Qty 1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_delivery_by"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/btn_size"
+                android:layout_alignStart="@+id/txt_womenCasual_2"
+                android:layout_alignTop="@id/txt_day"
+                android:layout_alignBottom="@id/txt_day"
+                android:gravity="center"
+                android:text="@string/delivery_by"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_day"
+                style="@style/TextStyle"
+                android:layout_below="@+id/btn_size"
+                android:layout_alignEnd="@+id/txt_womenCasual_2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="10 May 2XXX"
+                android:textSize="16sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_ApplyCoupons"
+                style="@style/TextStyleQc"
+                android:textColor="@color/black"
+                android:text="@string/apply_coupons"
+                android:layout_below="@id/txt_day"
+                android:layout_marginTop="60dp"
+                android:drawableStart="@drawable/icon_coupon"
+                android:drawablePadding="10dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/selectCoupons"
+                style="@style/TextStyle"
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                android:text="@string/select"
+                android:layout_alignTop="@id/txt_ApplyCoupons"
+                android:layout_alignBottom="@id/txt_ApplyCoupons"
+                android:layout_alignParentEnd="true"/>
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectCoupons"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/bg_line" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_paymentDetail"
+               style="@style/TextStyleQc"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="@string/order_payment_details"
+                android:layout_below="@id/line_3"
+                android:layout_marginTop="35dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_amounts"
+                style="@style/TextStyle16_400_black"
+                android:text="@string/order_amounts"
+                android:layout_below="@id/txt_paymentDetail"
+                android:layout_marginTop="26dp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_money_amounts"
+               style="@style/TextStyle"
+                android:textSize="16sp"
+                android:text="7,000.00"
+                android:layout_alignTop="@id/txt_amounts"
+                android:layout_alignBottom="@id/txt_amounts"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_rupee"
+                android:drawablePadding="10dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Convenience"
+                style="@style/TextStyle16_400_black"
+                android:text="@string/convenience"
+                android:layout_below="@id/txt_amounts"
+                android:layout_marginTop="12dp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_KnowMore"
+                android:fontFamily="@font/font_mons_600"
+                style="@style/TextStyleForgotPassword"
+                android:text="@string/know_more"
+                android:layout_toEndOf="@id/txt_Convenience"
+                android:layout_alignTop="@id/txt_Convenience"
+                android:layout_alignBottom="@id/txt_Convenience"
+                android:gravity="center"
+                android:layout_marginStart="14dp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_ApplyCoupon_2"
+                android:fontFamily="@font/font_mons_600"
+                style="@style/TextStyleForgotPassword"
+                android:text="@string/apply_coupon"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/txt_Convenience"
+                android:layout_alignBottom="@id/txt_Convenience"
+                android:gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_DeliveryFee"
+                android:textSize="14sp"
+                style="@style/TextStyle16_400_black"
+                android:text="@string/delivery_fee"
+                android:layout_below="@id/txt_Convenience"
+                android:layout_marginTop="12dp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Free"
+                android:fontFamily="@font/font_mons_600"
+                android:textSize="14sp"
+                style="@style/TextStyleForgotPassword"
+                android:text="Free"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/txt_DeliveryFee"
+                android:layout_alignBottom="@id/txt_DeliveryFee"
+                android:gravity="center"
+                />
+            <View
+                android:id="@+id/line_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_DeliveryFee"
+                android:layout_marginTop="41dp"
+                android:background="@drawable/bg_line" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_OrderTotal"
+                style="@style/TextStyleQc"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="@string/order_total"
+                android:layout_below="@id/line_4"
+                android:layout_marginTop="35dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_money_total"
+                style="@style/TextStyle"
+                android:textSize="16sp"
+                android:text="7,000.00"
+                android:layout_alignTop="@id/txt_OrderTotal"
+                android:layout_alignBottom="@id/txt_OrderTotal"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_rupee"
+                android:drawablePadding="10dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_EMIA_Available"
+                style="@style/TextStyle16_400_black"
+                android:text="@string/emi_available"
+                android:layout_below="@id/txt_OrderTotal"
+                android:layout_marginTop="12dp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Details_place_order"
+                android:fontFamily="@font/font_mons_600"
+                style="@style/TextStyleForgotPassword"
+                android:text="@string/details"
+                android:layout_toEndOf="@id/txt_EMIA_Available"
+                android:layout_alignTop="@id/txt_EMIA_Available"
+                android:layout_alignBottom="@id/txt_EMIA_Available"
+                android:gravity="center"
+                android:layout_marginStart="14dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/txt_EMIA_Available"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="37dp"
+                android:paddingBottom="37dp"
+                android:layout_marginTop="43dp"
+                android:background="@drawable/bv_payment"
+               >
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/txt_payment"
+                  style="@style/TextStyle"
+                   android:text="@string/proceed_to_payment"
+                   android:textSize="17sp"
+                   android:textColor="@color/white"
+                   android:background="@drawable/bg_red_btn"
+                   android:layout_alignParentBottom="true"
+                   android:paddingStart="24dp"
+                   android:paddingEnd="24dp"
+                   android:paddingTop="13dp"
+                   android:paddingBottom="13dp"
+                   android:layout_alignParentEnd="true"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_money_payment"
+                    style="@style/TextStyle"
+                    android:textSize="16sp"
+                    android:text="7,000.00"
+                    android:layout_alignTop="@id/txt_payment"
+                    android:drawableStart="@drawable/ic_rupee"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="5dp"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_Details_view"
+                    android:fontFamily="@font/font_mons_600"
+                    style="@style/TextStyleForgotPassword"
+                    android:text="View Details "
+                    android:layout_alignBottom="@id/txt_payment"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

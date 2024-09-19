@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.liveness.stylish.ProfileActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_back_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_checkout_profile"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_back_profile"
+        android:layout_centerHorizontal="true"
+        android:text="@string/checkout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_checkout_profile"
+        android:layout_marginBottom="57dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"
+                android:background="@drawable/bv_image"
+                app:srcCompat="@drawable/image_profile" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/image_profile"
+                android:layout_marginStart="-30dp"
+                android:layout_toEndOf="@id/image_profile"
+                android:background="@drawable/bv_profile_draw"
+                android:padding="9dp"
+                android:src="@drawable/ic_group_draw" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Detail"
+                style="@style/TextStyle"
+                android:layout_below="@+id/image_profile"
+                android:layout_marginTop="28dp"
+                android:text="@string/personal_details" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_emailAddress_profile"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/txt_Detail"
+                android:layout_marginTop="20dp"
+                android:text="@string/email_address"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_emailAddress_profile"
+                style="@style/TextStyleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_emailAddress_profile"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textSize="13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_passWord_profile"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/edt_emailAddress_profile"
+                android:layout_marginTop="20dp"
+                android:text="@string/password"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_passWord_profile"
+                style="@style/TextStyleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_passWord_profile"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:hint="@string/password"
+                android:inputType="numberPassword"
+                android:padding="14dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/change_passWord"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@id/edt_passWord_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/change_password" />
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/change_passWord"
+                android:layout_alignStart="@id/change_passWord"
+                android:background="@color/red" />
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/change_passWord"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/bg_line" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Business_Address_Details"
+                style="@style/TextStyle"
+                android:layout_below="@id/line_2"
+                android:layout_marginTop="34dp"
+                android:text="@string/business_address_details"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pinCode"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/Business_Address_Details"
+                android:layout_marginTop="22dp"
+                android:text="@string/pincode"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_pinCode"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/pinCode"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:inputType="number"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Address"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/edt_pinCode"
+                android:layout_marginTop="22dp"
+                android:text="@string/address"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_address"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Address"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:inputType="text"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/City"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/edt_address"
+                android:layout_marginTop="22dp"
+                android:text="@string/city"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_city"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/City"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:inputType="text"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/State"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/edt_city"
+                android:layout_marginTop="22dp"
+                android:text="@string/state"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_state"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/State"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:drawableEnd="@drawable/ic_down"
+                android:gravity="start"
+                android:inputType="text"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Country"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/edt_state"
+                android:layout_marginTop="22dp"
+                android:text="@string/country"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_country"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Country"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:inputType="text"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_country"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/bg_line" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Bank_Account_Details"
+                style="@style/TextStyle"
+                android:layout_below="@id/line_3"
+                android:layout_marginTop="32dp"
+                android:text="@string/bank_account_details"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Bank_Account_Number"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/Bank_Account_Details"
+                android:layout_marginTop="22dp"
+                android:text="@string/bank_account_number"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_bank_account_number"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txt_Bank_Account_Number"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:inputType="none"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Account_Holder_Name"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/edt_bank_account_number"
+                android:layout_marginTop="22dp"
+                android:text="@string/account_holder_s_name"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_account_holder_name"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txt_Account_Holder_Name"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:inputType="text"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_IFSC_Code"
+                style="@style/TextStyleForgotPassword"
+                android:layout_below="@+id/edt_account_holder_name"
+                android:layout_marginTop="22dp"
+                android:text="@string/ifsc_code"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_IFSC_code"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txt_IFSC_Code"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bv_xam_white"
+                android:gravity="start"
+                android:inputType="none"
+                android:padding="14dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_IFSC_code"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/bg_red_btn"
+                android:padding="14dp"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/font_mons_600</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="TextStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/font_mons_700</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+
+    </style>
+
+    <style name="TextStyle2">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/quickly</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/font_mons_600</item>
+        <item name="android:lineSpacingExtra">10dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextStyleSignIn_Up">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">36sp</item>
+        <item name="fontFamily">@font/font_mons_600</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextStyleEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/font_mons_500</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="paddingStart">10dp</item>
+    </style>
+
+    <style name="HintTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">@color/xam4</item>
+        <item name="fontFamily">@font/font_mons_500</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="TextStyleForgotPassword">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="fontFamily">@font/font_mons_400</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnStyleSignIN_Up">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/font_mons_600</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="btnImageStyle">
+        <item name="android:layout_width">54dp</item>
+        <item name="android:layout_height">54dp</item>
+
+    </style>
+
+    <style name="TextStyleNote">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/xam4</item>
+        <item name="fontFamily">@font/font_mons_400</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="TextStyleItem">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">10sp</item>
+    <item name="android:textColor">#21003D</item>
+    <item name="fontFamily">@font/font_mons_400</item>
+    <item name="android:lineSpacingExtra">4dp</item>
+    <item name="android:letterSpacing">0.02</item>
+</style>
+
+    <style name="TextStyleYouWant">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">34sp</item>
+        <item name="fontFamily">@font/font_mons_600</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextStyleHint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/font_mons_400</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextStyleQc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/font_mons_500</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TextStyleQC_700">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/font_mons_700</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+
+    </style>
+    <style name="TextStyle16_400_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/font_mons_400</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

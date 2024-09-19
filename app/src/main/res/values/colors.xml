@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="quickly">#A8A8A9</color>
+    <color name="red">#F83758</color>
+    <color name="color_rectangle">#17223B</color>
+    <color name="xam1">#C4C4C4</color>
+    <color name="xam2">#F3F3F3</color>
+    <color name="xam3">#A8A8A9</color>
+    <color name="xam4">#676767</color>
+    <color name="xam5">#575757</color>
+    <color name="pink">#FCF3F6</color>
+    <color name="orange">#FF4B26</color>
+    <color name="xam6">#C4C4C4</color>
+    <color name="linear_gradient">#B4FDFDFD</color>
+    <color name="text_hint">#BBBBBB</color>
+    <color name="bg_all">#FDFDFD</color>
+    <color name="xam7">#828282</color>
+</resources>

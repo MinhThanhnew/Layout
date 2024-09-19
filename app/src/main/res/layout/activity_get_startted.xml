@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.liveness.stylish.GetStarttedActivity"
+    tools:ignore="MissingConstraints">
+    <Button
+        android:id="@+id/btnZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.59"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/image_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnZero">
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextStyleYouWant"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:text="@string/you_want_authentic_here_you_go" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_getStarted"
+            style="@style/btnStyleSignIN_Up"
+            android:textSize="23sp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/bg_red_btn"
+            android:text="@string/get_started"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/find_it_here_buy_it_now"
+            style="@style/TextStyleNote"
+            android:textSize="14sp"
+            android:textColor="#F2F2F2"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

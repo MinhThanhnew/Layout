@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/bg_edt">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_r7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/image_sneaker_v7" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Women Printed Kurta"
+        android:layout_marginTop="10dp"
+        style="@style/TextStyleEditText"
+        android:layout_below="@+id/image_r7"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r7_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neque porro quisquam est qui dolorem ipsum quia"
+        android:layout_marginTop="10dp"
+        style="@style/TextStyleItem"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txt_r7"
+        android:layout_alignEnd="@id/image_r7"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r7_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="₹1500"
+        style="@style/TextStyleEditText"
+        android:layout_below="@+id/txt_r7_2"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r7_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="₹2499"
+        style="@style/TextStyleEditText"
+        android:textColor="#BBBBBB"
+        android:layout_below="@+id/txt_r7_3"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r2_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="40%Off"
+        style="@style/TextStyleEditText"
+        android:textColor="#FE735C"
+        android:layout_toEndOf="@+id/txt_r7_4"
+        android:layout_alignBottom="@id/txt_r7_4"
+        android:layout_marginStart="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerV7_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="1"
+        tools:itemCount="5"
+        tools:listitem="@layout/start"
+        android:layout_below="@+id/txt_r7_4"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_r7_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="56890"
+        style="@style/TextStyleEditText"
+        android:textColor="#A4A9B3"
+        android:layout_toEndOf="@+id/recyclerV7_1"
+        android:layout_alignBottom="@id/recyclerV7_1"
+        android:layout_marginStart="10dp"/>
+
+
+
+
+</RelativeLayout>
